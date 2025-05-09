@@ -24,8 +24,6 @@ body {
   transition: opacity 5s ease;
 }
 
-
-
 .gateImage {
   width: 100%;
   height: 165%;
@@ -48,7 +46,7 @@ body {
 
 /* Videos */
 
-.birdsFlyDiv{
+.birdsFlyDiv {
   position: absolute;
   top: 0;
   left: 0;
@@ -64,8 +62,6 @@ body {
 .thunderVideo {
   opacity: 0.3;
 }
-
-
 
 /* SECTION - 2 ------------------------------- */
 
@@ -213,11 +209,11 @@ body {
   font-family: monospace;
 }
 
-.buttonBox2{
+.buttonBox2 {
   display: none;
 }
 
-.RestartDiv{
+.RestartDiv {
   /* border: 1px solid #f10e0e; */
   display: none !important;
 }
@@ -261,8 +257,6 @@ body {
   filter: brightness(0%);
 }
 
-
-
 .mummyDivTranform {
   transform: translate(0px, 0px);
 }
@@ -281,7 +275,7 @@ body {
   opacity: 0.5;
 }
 
-.displayClass{
+.displayClass {
   display: flex !important;
 }
 
@@ -295,11 +289,4 @@ body {
   }
 }
 
-/* @media only screen and (max-width: 992px) {
-  .birdsFly{
-    width: 100%;
-   
-    height: 300px;
-    opacity: 0.6;
-  }
-} */
+
