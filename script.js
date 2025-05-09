@@ -1,4 +1,3 @@
-
 const part1 = document.querySelector(".part1");
 const part2 = document.querySelector(".part2");
 const universeImage = document.querySelector(".universeImage");
@@ -19,7 +18,7 @@ function openGateFunction(element) {
   const pyramidImage = document.querySelector(".pyramidImage");
   const birdsFly = document.querySelector(".birdsFly");
   const thunderVideo = document.querySelector(".thunderVideo");
-  const cloude = document.querySelector(".cloude");
+  
   const buttonBox2 = document.querySelector(".buttonBox2");
 
   element.classList.toggle("ButtonClass");
@@ -33,7 +32,7 @@ function openGateFunction(element) {
     gate = setTimeout(() => {
       gateImage.classList.add("slideGate");
       thunderVideo.play();
-      cloude.play();
+      
       thunderVideo.volume = 0.1;
     }, 2000);
 
@@ -109,7 +108,6 @@ function egyptAnimation(element) {
   eygptButtonDiv.classList.add("hiddenClass");
   setTimeout(() => {
     eygptButtonDiv.style.display = "none";
-    
   }, 1000);
 
   element.classList.toggle("ButtonClass");
@@ -138,37 +136,43 @@ function egyptAnimation(element) {
         if (wasMusicPlayingBeforeVideo) {
           backgroundMusic.play();
         }
+
+
+        // ++++++++++++++++++++++++
+        EgyptVideoDiv.classList.remove("visibleClass");
+        egyptImage.classList.remove("brightness1");
+        universeImage.classList.remove("brightness1");
+
+        setTimeout(() => {
+          TheMummyDiv.classList.add("mummyDivTranform");
+        }, 2000);
+
+        setTimeout(() => {
+          TheMummy.classList.add("mummyTransform");
+          DoorAudio.currentTime = 0;
+          DoorAudio.play();
+
+          setTimeout(() => {
+            rainVideo.classList.add("rainOpacity");
+            StressReliefAudio.play();
+            RestartDiv.classList.add("displayClass");
+          }, 5000);
+        }, 7000);
+
+        RockAudio.play();
+
+        // Resume music if it was playing before
+        if (wasMusicPlayingBeforeVideo) {
+          backgroundMusic.play();
+        }
+
+        // ++++++++++++++++++
       };
     }, 2000);
 
-    hideVideoTimeout = setTimeout(() => {
-      EgyptVideoDiv.classList.remove("visibleClass");
-      egyptImage.classList.remove("brightness1");
-      universeImage.classList.remove("brightness1");
+    // hideVideoTimeout = setTimeout(() => {
 
-      setTimeout(() => {
-        TheMummyDiv.classList.add("mummyDivTranform");
-      }, 2000);
-
-      setTimeout(() => {
-        TheMummy.classList.add("mummyTransform");
-        DoorAudio.currentTime = 0;
-        DoorAudio.play();
-
-        setTimeout(() => {
-          rainVideo.classList.add("rainOpacity");
-          StressReliefAudio.play();
-          RestartDiv.classList.add("displayClass");
-        }, 5000);
-      }, 7000);
-
-      RockAudio.play();
-
-      // Resume music if it was playing before
-      if (wasMusicPlayingBeforeVideo) {
-        backgroundMusic.play();
-      }
-    }, 48000);
+    // }, 48000);
   } else {
     // Toggle OFF
     element.innerHTML = `<i class="bi bi-toggle-off"></i>`;
@@ -212,8 +216,6 @@ function playMusic(clickedButton) {
     }
   });
 }
-
-
 
 function RestartAnimation(element) {
   element.classList.add("ButtonClass");
