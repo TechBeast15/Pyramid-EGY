@@ -12,8 +12,8 @@ body {
 /* SECTION - 1 ------------------------------- */
 
 .part1 {
-  border: 1px solid #ff0000;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* Images */
@@ -22,18 +22,16 @@ body {
   height: 100%;
   filter: saturate(150%) brightness(200%);
   transition: opacity 5s ease;
-  /* display: none; */
 }
 
 
 
 .gateImage {
-  position: absolute;
-  top: -38%;
-  left: 0;
   width: 100%;
   height: 165%;
-
+  position: absolute;
+  top: -40%;
+  left: -0%;
   z-index: -1;
   transition: transform 10s ease-in-out, opacity 2s ease;
 }
@@ -49,32 +47,25 @@ body {
 }
 
 /* Videos */
-.birdsFly {
+
+.birdsFlyDiv{
   position: absolute;
-  top: 0%;
+  top: 0;
   left: 0;
-  opacity: 0.1;
-  z-index: 1;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.birdsFly {
+  opacity: 0.1;
   transition: opacity 5s ease;
 }
 
 .thunderVideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
   opacity: 0.3;
 }
 
-.cloude {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-}
+
 
 /* SECTION - 2 ------------------------------- */
 
@@ -194,6 +185,7 @@ body {
   color: aliceblue;
   border-radius: 10px;
   z-index: 2;
+  user-select: none;
 }
 
 .buttonBox div {
@@ -221,11 +213,11 @@ body {
   font-family: monospace;
 }
 
-.buttonBox2 {
+.buttonBox2{
   display: none;
 }
 
-.RestartDiv {
+.RestartDiv{
   /* border: 1px solid #f10e0e; */
   display: none !important;
 }
@@ -269,6 +261,8 @@ body {
   filter: brightness(0%);
 }
 
+
+
 .mummyDivTranform {
   transform: translate(0px, 0px);
 }
@@ -287,7 +281,7 @@ body {
   opacity: 0.5;
 }
 
-.displayClass {
+.displayClass{
   display: flex !important;
 }
 
@@ -300,3 +294,12 @@ body {
     width: 100%;
   }
 }
+
+/* @media only screen and (max-width: 992px) {
+  .birdsFly{
+    width: 100%;
+   
+    height: 300px;
+    opacity: 0.6;
+  }
+} */
