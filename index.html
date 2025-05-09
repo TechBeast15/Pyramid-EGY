@@ -78,6 +78,67 @@
         </div>
       </div>
     </section>
+
+     <section class="part2">
+      <!-- Images -->
+      <img src="./Assets/Img/EGYPT.png" class="egyptImage" alt="" />
+      <img
+        src="./Assets/Animation/universeImage.gif"
+        class="universeImage"
+        alt=""
+      />
+
+      <div class="TheMummyDiv">
+        <div class="mummyBackground">
+          <img src="./Assets/Img/King.png" class="king" alt="" />
+
+          <img src="./Assets/Img/TheMummy.png" class="TheMummy" alt="" />
+        </div>
+      </div>
+
+      <!-- Videos -->
+      <div class="EgyptVideoDiv">
+        <video
+          src="Assets/Video/EgyptVideo.mov"
+          id="EgyptVideo"
+          class="EgyptVideo"
+        ></video>
+      </div>
+
+      <div class="effectDiv">
+        <video
+          src="./Assets/Video/Rain.mp4"
+          class="rainVideo"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttonBox buttonBox2">
+        <div class="eygptButtonDiv">
+          <button onclick="egyptAnimation(this)">
+            <i class="bi bi-toggle-off"></i>
+          </button>
+          <p>Animation</p>
+        </div>
+
+        <div class="RestartDiv">
+          <button onclick="RestartAnimation(this)">
+            <i class="bi bi-toggle-off"></i>
+          </button>
+          <p>Restart</p>
+        </div>
+
+        <div class="">
+          <button onclick="playMusic(this)">
+            <i class="bi bi-toggle-off"></i>
+          </button>
+          <p>Music</p>
+        </div>
+      </div>
+    </section>
   </body>
 
   <script src="./script.js"></script>

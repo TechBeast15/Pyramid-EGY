@@ -3,7 +3,7 @@ const part1 = document.querySelector(".part1");
 const part2 = document.querySelector(".part2");
 const universeImage = document.querySelector(".universeImage");
 const TheMummyDiv = document.querySelector(".TheMummyDiv");
-// part2.classList.add("hiddenClass");
+part2.classList.add("hiddenClass");
 
 let gate, waterfall, pyramid, partVisible, partHidden;
 
