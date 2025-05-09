@@ -14,8 +14,6 @@ body {
 .part1 {
   height: 100vh;
   overflow: hidden;
-
-  
 }
 
 /* Images */
@@ -289,6 +287,13 @@ body {
   display: flex !important;
 }
 
+
+@media only screen and (max-width: 576px) {
+  .TheMummy {
+    padding: 120% 0%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .EgyptVideoDiv {
     padding: 30px;
@@ -299,15 +304,14 @@ body {
   }
 
   .TheMummy {
-
+    padding: 50% 0%;
   }
 }
 
 
-@media only screen and (max-width: 576px) {
- 
-
+@media only screen and (min-width: 768px) {
+  
   .TheMummy {
-    padding: 120% 0%;
+    padding: 40%  0% 20% 0%;
   }
 }
