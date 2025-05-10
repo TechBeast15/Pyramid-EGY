@@ -1,7 +1,7 @@
 const part1 = document.querySelector(".part1");
 const part2 = document.querySelector(".part2");
 const universeImage = document.querySelector(".universeImage");
-const TheMummyDiv = document.querySelector(".TheMummyDiv");
+// const TheMummyDiv = document.querySelector(".TheMummyDiv");
 part2.classList.add("hiddenClass");
 
 let gate, waterfall, pyramid, partVisible, partHidden;
@@ -59,7 +59,7 @@ function openGateFunction(element) {
     partHidden = setTimeout(() => {
       fallingAudio.pause();
       buttonBox2.style.display = "block";
-      TheMummyDiv.style.display = "block";
+      // TheMummyDiv.style.display = "block";
     }, 20000);
   } else {
     // Toggle OFF
@@ -100,7 +100,7 @@ function egyptAnimation(element) {
   const egyptImage = document.querySelector(".egyptImage");
   const EgyptVideoDiv = document.querySelector(".EgyptVideoDiv");
   const EgyptVideo = document.querySelector(".EgyptVideo");
-  const TheMummy = document.querySelector(".TheMummy");
+  // const TheMummy = document.querySelector(".TheMummy");
   const rainVideo = document.querySelector(".rainVideo");
   const eygptButtonDiv = document.querySelector(".eygptButtonDiv");
   const RestartDiv = document.querySelector(".RestartDiv");
@@ -144,11 +144,11 @@ function egyptAnimation(element) {
         universeImage.classList.remove("brightness1");
 
         setTimeout(() => {
-          TheMummyDiv.classList.add("mummyDivTranform");
+          // TheMummyDiv.classList.add("mummyDivTranform");
         }, 2000);
 
         setTimeout(() => {
-          TheMummy.classList.add("mummyTransform");
+          // TheMummy.classList.add("mummyTransform");
           DoorAudio.currentTime = 0;
           DoorAudio.play();
 

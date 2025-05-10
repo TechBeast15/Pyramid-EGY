@@ -36,8 +36,8 @@ body {
 
 .waterfallImage {
   position: absolute;
-  top: 54%;
-  left: 42%;
+  top: 53vh;
+  left: 42.3%;
   width: 16%;
   height: 30%;
   z-index: -2;
